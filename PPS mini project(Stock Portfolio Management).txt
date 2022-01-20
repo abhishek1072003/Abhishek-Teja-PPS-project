@@ -1,0 +1,84 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+
+{float u,v,w,x,y;
+ 
+ int a;
+ float b,c,d;
+ printf("Number of shares brought from Reliance: "); 
+ scanf("%d",&a);
+   printf("Buying Price of each share: Rupees");   
+   scanf("%f",&b);
+   printf("Market price of each share: Rupees");   
+   scanf("%f",&c);
+d=(c-b)*100/b;
+u=(c-b)*a;
+printf("----------------------\n");
+
+int e;
+float f,g,h;
+printf("Number of shares brought from Airtel: "); 
+ scanf("%d",&e);
+   printf("Buying Price of each share:  Rupees");   
+   scanf("%f",&f);
+   printf("Market price of each share: Rupees ");   
+   scanf("%f",&g);
+   h=(g-f)*100/f;
+   v=(g-f)*e;
+   printf("----------------------\n");
+   
+   int i; 
+   float j,k,l;
+printf("Number of shares brought from HUL: "); 
+ scanf("%d",&i);
+   printf("Buying Price of each share: Rupees ");   
+   scanf("%f",&j);
+   printf("Market price of each share: Rupees ");   
+   scanf("%f",&k);
+   l=(k-j)*100/j;
+   w=(k-j)*i;
+   printf("----------------------\n");
+   
+   int m;
+   float n,o,p;
+ printf("Number of shares brought from HDFC Bank: "); 
+ scanf("%d",&m);
+   printf("Buying Price of each share: Rupees ");   
+   scanf("%f",&n);
+   printf("Market price of each share: Rupees ");   
+   scanf("%f",&o);
+   p=(o-n)*100/n;
+   x=(o-n)*m;
+   printf("----------------------\n");
+   
+   int q;
+   float r,s,t;
+ printf("Number of shares brought from TCS: "); 
+ scanf("%d",&q);
+   printf("Buying Price of each share: Rupees ");   
+   scanf("%f",&r);
+   printf("Market price of each share: Rupees ");   
+   scanf("%f",&s);
+   t=(s-r)*100/r;
+   y=(s-r)*q;
+   
+   
+   printf("---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n");
+   printf("Sl.no.|    Name of stock                  | Quantity  | Buying Price       | Market Price           |Percent of profit/loss      |Amount gain/lost     |Profit/Loss                                |\n");
+   printf("---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n");
+   printf("1     | Reliance Industries Ltd.          |%d        |%.2f              |%.2f                     |  %.2f                      |%.2f                 |",a,b,c,d,u);  if(c>b) {printf(" Profit\n");} else if(c<b) { printf(" Loss\n");} else{printf(" Break-even\n");}
+   printf("2     | Bharti Airtel Ltd.                |%d        |%.2f              |%.2f                     |  %.2f                      |%.2f                 |",e,f,g,h,v);  if(f>e) {printf(" Profit\n");} else if(f<e) { printf(" Loss\n");} else{printf(" Break-even\n");}
+   printf("3     | Hindustan Unilever Ltd.           |%d        |%.2f              |%.2f                     |  %.2f                      |%.2f                 |",i,j,k,l,w);  if(k>j) {printf(" Profit\n");} else if(k<j) { printf(" Loss\n");} else{printf(" Break-even\n");}
+   printf("4     | HDFC Ltd.                         |%d        |%.2f              |%.2f                     |  %.2f                      |%.2f                 |",m,n,o,p,x);  if(o>n) {printf(" Profit\n");} else if(o<n) { printf(" Loss\n");} else{printf(" Break-even\n");}
+   printf("5     | TATA Consultancy Services         |%d        |%.2f              |%.2f                     |  %.2f                      |%.2f                 |",q,r,s,t,y);  if(s>r) {printf(" Profit\n");} else if(s<r) { printf(" Loss\n");} else{printf(" Break-even\n");}
+   printf("Reasons for Performance of stocks\n\nReliance: It seeks to raise up to $5 Billion to use these funds to retire existing borrowing.The market remained in a correction period.\n\nAirtel: There is a bull-call spread in market.In the year 2021 ,Airtel and Hero Motocorp remained most disappointing stocks but now with a game changer strategy of increasing the prices in the current service packages\n\nHUL: Statement released to ensure uninterrupted supply as the distributors protest .It becomes one of the top 10 most valued firms of this year.\n\nHDFC Bank:  Shortcomings in performance of IT department,credit card ban,and slow growth due to pandemic has caused heavy selling by foreign investors and is in process of correction.\n\nTCS: It becomes the most active stock with highest volume due to various qualitative resaons of acquiring air india,recovery of loss of TATA motors and CAGR reports giving a whooping prediction of 9.45percent growth in services.\n\n");
+   
+  {char ch;
+  printf("Hope your portfolio was clear!! ");
+  ch=getchar();
+printf("Please visit again:)");
+putchar(ch);}
+   
+   
+    return 0;}
